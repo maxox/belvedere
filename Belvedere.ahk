@@ -186,7 +186,8 @@ Loop
 					else if (Subject%RuleNum% = "Date created")
 						thisSubject := getDateCreated(file)
 					else
-						MsgBox,,No Match, Subject does not have a match
+						;MsgBox,,No Match, Subject does not have a match
+						continue
 					
 					; Below determines the comparison verb
 					if (Verb%RuleNum% = "contains")
